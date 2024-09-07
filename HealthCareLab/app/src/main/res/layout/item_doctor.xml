@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/rounded_green_bg"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivDoctorImage"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="doctor_image_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_male_doctor"
+        android:layout_centerVertical="true"
+        app:layout_constraintEnd_toStartOf="@id/tvDoctorName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDoctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/ivDoctorImage"
+        android:includeFontPadding="false"
+        android:text="Dr. Kirhad"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/viewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tvDoctorName"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/ivDoctorImage"
+        android:background="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/tvMobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewTwo"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/ivDoctorImage"
+        android:includeFontPadding="false"
+        android:text="8888984800"
+        android:textColor="@color/dark_gray"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvHospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMobileNo"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/ivDoctorImage"
+        android:includeFontPadding="false"
+        android:text="Medipoint Hospital"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
